@@ -1,14 +1,15 @@
 <!-- <h2>{{hero.name | uppercase }}'s Details</h2>  --><!-- this is a pipe -->
-<h2>My Heroes</h2>
+<h2>My Heroes</h2> 
 <ul class="heroes">
-  <li  *ngFor="let hero of heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+  <!-- <li  *ngFor="let hero of heroes" 
+  [class.selected]="hero === selectedHero"
+  (click)="onSelect(hero)"> -->
+    <!-- conditional css style class.selected.  event binding syntax, click, with hero component onselect -->
     <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
   </li>
 </ul>
 <!-- this is to show objects -->
- <!--  <label>name:
-    <input [(ngModel)]="hero.name" placeholder="name"/>
-  </label> -->
- <!-- [(ngModel)] is Angular's two-way data binding syntax. 
-  but need to import to app.module (since hero component also declared there) to use-->
-
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->

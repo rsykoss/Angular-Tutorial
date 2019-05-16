@@ -1,10 +1,12 @@
 # AngularTutorial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9. Followed from [angular tutorial site](https://angular.io/tutorial). 
+
+This repository is just about following the angular tutorial from the site with additional comments about my learning points for my future reference.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
